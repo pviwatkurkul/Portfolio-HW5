@@ -1,0 +1,325 @@
+
+@media only screen and (min-width:320px){
+    #projects{
+        margin:0 10%;
+    }
+
+    .projectContainer{
+        display:flex;
+        flex-wrap:wrap;
+        gap:20px;
+        justify-content:center;
+    }
+    #projects > h2{
+        margin-bottom:20px;
+        font-size:28px;
+        font-weight:700;
+        color:var(--frostwhite,white);
+        font-family:"Figtree", serif;
+    }
+
+    #project-one{
+        padding:25px;
+        border:1px solid var(--frostwhite,white);
+        border-radius:12px;
+        max-width:320px;
+        background-color: var(--dark-blue,navy);  
+    }
+    
+    #project-one > picture{
+        margin-bottom:6px;
+    }
+    #project-one > h4{
+        color:var(--purple,DarkOrchid);
+        font-size:19px;
+        font-family:"Figtree", serif;
+        margin-bottom:6px;
+        font-weight:700;
+    }
+    #project-one > p{
+        color:var(--frostwhite,white);
+        font-size:16px;
+        font-family:"Figtree", serif;
+        margin-bottom:6px;
+    }
+
+    #project-two{
+        padding:25px;
+        border:1px solid var(--frostwhite,white);
+        border-radius:12px;
+        max-width:320px;
+        background-color: var(--dark-blue,navy);  
+    }
+    
+    #project-two > picture{
+        margin-bottom:6px;
+    }
+    #project-two > h4{
+        color:var(--purple,DarkOrchid);
+        font-size:19px;
+        font-family:"Figtree", serif;
+        margin-bottom:6px;
+        font-weight:700;
+    }
+    #project-two > p{
+        color:var(--frostwhite,white);
+        font-size:16px;
+        font-family:"Figtree", serif;
+        margin-bottom:6px;
+    }
+
+    #project-three{
+        padding:25px;
+        border:1px solid var(--frostwhite,white);
+        border-radius:12px;
+        max-width:320px;
+        background-color: var(--dark-blue,navy);  
+
+    }
+    
+    #project-three > picture{
+        margin-bottom:6px;
+    }
+    #project-three> h4{
+        color:var(--purple,DarkOrchid);
+        font-size:19px;
+        font-family:"Figtree", serif;
+        margin-bottom:6px;
+        font-weight:700;
+    }
+    #project-three > p{
+        color:var(--frostwhite,white);
+        font-size:16px;
+        font-family:"Figtree", serif;
+        margin-bottom:6px;
+    }
+    
+    .githubProject{
+        display:flex;
+        align-items:center;
+        color:var(--frostwhite,white);
+        transition: all .2s ease-in-out; 
+    }
+
+    .githubProject:hover{
+        transform: scale(1.2);
+    }
+    .projectTags{
+        display:flex;
+        flex-wrap:wrap;
+        gap:10px;
+    }
+
+}
+
+@media only screen and (min-width:992px){
+    #projects{
+        margin:0 15%;
+    }
+
+    .projectContainer{
+        display:flex;
+        flex-wrap:wrap;
+        gap:20px;
+        justify-content:space-between;
+    }
+    #projects > h2{
+        margin-bottom:20px;
+        font-size:38px;
+        font-weight:700;
+        color:var(--frostwhite,white);
+        font-family:"Figtree", serif;
+    }
+
+    #project-one{
+        padding:25px;
+        border:1px solid var(--frostwhite,white);
+        border-radius:12px;
+        max-width:320px;
+        background-color: var(--dark-blue,navy);  
+        flex: 1 1 320px;
+    }
+    
+    #project-one > picture{
+        margin-bottom:6px;
+    }
+    #project-one > h4{
+        color:var(--purple,DarkOrchid);
+        font-size:24px;
+        font-family:"Figtree", serif;
+        margin-bottom:6px;
+        font-weight:700;
+    }
+    #project-one > p{
+        color:var(--frostwhite,white);
+        font-size:18px;
+        font-family:"Figtree", serif;
+        margin-bottom:6px;
+    }
+
+    #project-two{
+        padding:25px;
+        border:1px solid var(--frostwhite,white);
+        border-radius:12px;
+        max-width:320px;
+        background-color: var(--dark-blue,navy);  
+        flex: 1 1 320px; 
+    }
+    
+    #project-two > picture{
+        margin-bottom:6px;
+    }
+    #project-two > h4{
+        color:var(--purple,DarkOrchid);
+        font-size:24px;
+        font-family:"Figtree", serif;
+        margin-bottom:6px;
+        font-weight:700;
+    }
+    #project-two > p{
+        color:var(--frostwhite,white);
+        font-size:18px;
+        font-family:"Figtree", serif;
+        margin-bottom:6px;
+    }
+
+    #project-three{
+        padding:25px;
+        border:1px solid var(--frostwhite,white);
+        border-radius:12px;
+        max-width:320px; 
+        background-color: var(--dark-blue,navy);  
+        flex: 1 1 320px;
+    }
+    
+    #project-three > picture{
+        margin-bottom:6px;
+    }
+    #project-three> h4{
+        color:var(--purple,DarkOrchid);
+        font-size:24px;
+        font-family:"Figtree", serif;
+        margin-bottom:6px;
+        font-weight:700;
+    }
+    #project-three > p{
+        color:var(--frostwhite,white);
+        font-size:18px;
+        font-family:"Figtree", serif;
+        margin-bottom:6px;
+    }
+
+    .githubHyperLink{
+        display:block;
+        width:32px;
+        height:32px;
+    }
+
+}
+
+@media only screen and (min-width:1200px){
+    #projects{
+        margin:0;
+    }
+
+    .projectContainer{
+        display:flex;
+        flex-wrap:nowrap;
+        justify-content:space-between;
+        margin:0 15%;
+        
+    }
+    #projects > h2{
+        margin-bottom:20px;
+        font-size:2.75rem;
+        font-weight:700;
+        color:var(--frostwhite,white);
+        font-family:"Figtree", serif;
+        margin-left:20%;
+    }
+
+    .projectCard{
+        padding:20px 25px;
+        border:1px solid var(--frostwhite,white);
+        border-radius:12px;
+        max-width:340px;
+        background-color: var(--dark-blue,navy);  
+        flex: 1 1 340px;
+    }
+    
+    .projectCard > picture{
+        margin-bottom:6px;
+    }
+
+    .projectCard > h4{
+        color:var(--purple,DarkOrchid);
+        font-size:1.75rem;
+        font-family:"Figtree", serif;
+        margin-bottom:6px;
+        font-weight:700;
+    }
+    .projectCard > p{
+        color:var(--frostwhite,white);
+        font-size:1.25rem;
+        font-family:"Figtree", serif;
+        margin-bottom:6px;
+    }
+
+    /* #project-two{
+        padding:25px;
+        border:1px solid var(--frostwhite,white);
+        border-radius:12px;
+        max-width:340px;
+        background-color: var(--dark-blue,navy);  
+        flex: 1 1 340px; 
+    }
+    
+    #project-two > picture{
+        margin-bottom:6px;
+    }
+    #project-two > h4{
+        color:var(--purple,DarkOrchid);
+        font-size:1.75rem;
+        font-family:"Figtree", serif;
+        margin-bottom:6px;
+        font-weight:700;
+    }
+    #project-two > p{
+        color:var(--frostwhite,white);
+        font-size:1.25rem;
+        font-family:"Figtree", serif;
+        margin-bottom:6px;
+    }
+
+    #project-three{
+        padding:25px;
+        border:1px solid var(--frostwhite,white);
+        border-radius:12px;
+        max-width:340px; 
+        background-color: var(--dark-blue,navy);  
+        flex: 1 1 340px;
+    }
+    
+    #project-three > picture{
+        margin-bottom:6px;
+    }
+    #project-three> h4{
+        color:var(--purple,DarkOrchid);
+        font-size:1.75rem;
+        font-family:"Figtree", serif;
+        margin-bottom:6px;
+        font-weight:700;
+    }
+    #project-three > p{
+        color:var(--frostwhite,white);
+        font-size:1.25rem;
+        font-family:"Figtree", serif;
+        margin-bottom:6px;
+    } */
+
+    .githubHyperLink{
+        display:block;
+        width:32px;
+        height:32px;
+    }
+}

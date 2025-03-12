@@ -126,7 +126,6 @@
             <project-card class="projectCard"></project-card>
             <project-card class="projectCard"></project-card>
             <project-card class="projectCard"></project-card>
-
         </div>
     </div>
     <noscript>Light Mode will not work with JavaScript off! Please turn on JavaScript to enable functionality</noscript>
@@ -155,11 +154,8 @@
             constructor(){
                 super();
             }
-            connectedCallback(){
-                const imgPath = "./assets/tripsmart.png";
-                const imgAlt = "Project 1 Web Application Screenshot"
-                const name = "TripSmart"
-                const content = "Tripsmart is a social web app designed for planning and budgeting group travel. It features an intuitive spending dashboard that tracks expenses both before and during your trip, ensuring seamless budget management among friends. Create and save detailed itineraries that include flights, hotels, and planned activities, and work together in real time to create unforgettable travel experiences.";
+            setData(data){
+                const {imgPath, imgAlt, name, content} = data;
 
                 this.innerHTML = `
                 <picture>
@@ -196,17 +192,85 @@
                 </div>
                 `
             }
+
+            connectedCallback(){
+                this.setData(
+                {
+                    imgPath:"",
+                    imgAlt:"Missing Image",
+                    name:"Project Name",
+                    content:"Filler Project Description"
+                });
+            }
             
         }
         customElements.define('project-card',Card);
     </script>
     <script>
+        const projects = 
+            [
+                {
+                    "name":"TripSmart",
+                    "imgPath":"./assets/tripsmart.png",
+                    "imgAlt":"TripSmart Web Application Screenshot",
+                    "content":"Tripsmart is a social web app designed for planning and budgeting group travel. It features an intuitive spending dashboard that tracks expenses both before and during your trip, ensuring seamless budget management among friends. Create and save detailed itineraries that include flights, hotels, and planned activities, and work together in real time to create unforgettable travel experiences."
+                },
+                {
+                    "name":"Data Science Alliance",
+                    "imgPath":"./assets/dsa.png",
+                    "imgAlt":"DSA Web Application Screenshot",
+                    "content":"I had the pleasure of working for Data Science Alliance a non-profit organization aimed at making Data Science ethical. The project required building the website and consisting of multiple pages. I lead a team of other web developer interns and ensured work that was accessible, responsive, and intuitive."
+                },
+                {
+                    "name":"One and Done",
+                    "imgPath":"./assets/onedone.png",
+                    "imgAlt":"One and Done Web Application Screenshot",
+                    "content":"One and Done is a CRUD web app designed for developers and task managers. It enables users to efficiently create, update, and manage tasks, compose notes using Markdown, and organize files with a custom-built folder system."
+                }
+            ];
+        
+        localStorage.setItem("projects",JSON.stringify(projects))
 
         let localBtn = document.getElementById("local-button");
+
+        localBtn.addEventListener("click", async () => {
+            try{
+                const response = localStorage.getItem("projects");
+                const data = JSON.parse(response);
+                const projectCards = document.querySelectorAll('project-card');
+                projectCards.forEach((card, index) => {
+                    if (data[index]) {
+                        console.log(data[index])
+                        card.setData(data[index]);
+                    }
+                });
+            }
+            catch(error){
+                console.error("Error fetching remote data:", error);
+            }
+        });
+
+    </script>
+    <script>
+        let url = encodeURIComponent("https://my-json-server.typicode.com/pviwatkurkul/Portfolio-HW5/GET")
         let remoteBtn = document.getElementById("remote-button");
-        localBtn.addEventListener("click", async () =>{
+        
+        remoteBtn.addEventListener("click", async () => {
+        try {
+            const response = await fetch("https://my-json-server.typicode.com/pviwatkurkul/Portfolio-HW5/projects");
+            const data = await response.json();
+
+            const projectCards = document.querySelectorAll('project-card');
             
-        })
+            projectCards.forEach((card, index) => {
+                if (data[index]) {
+                    card.setData(data[index]);
+                }
+            });
+        } catch (error) {
+            console.error("Error fetching remote data:", error);
+        }
+    });
 
     </script>
 </body>

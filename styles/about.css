@@ -48,7 +48,6 @@
         display:none;
     }
 
-    /* Extra Credit */
     #about-me {
         font-family:"Figtree", serif;
         margin:0 10%;
@@ -57,7 +56,7 @@
             font-weight:700;
             font-size:34px;
             color:var(--redpink,red);
-            animation:500ms slide-in;
+            animation:2s fadeIn;
             animation-timing-function: linear;
             animation-iteration-count: 1;
         }
@@ -67,7 +66,7 @@
         font-size:1rem;
         color:var(--frostwhite,white);
         line-height:normal;
-        animation:400ms slide-in;
+        animation:1s fadeIn;  
         animation-timing-function: linear;
         animation-iteration-count: 1;
     }
@@ -78,7 +77,7 @@
         font-size:23px;
         /*gamut color*/
         color: var(--cream,FloralWhite);
-        animation:700ms slide-in;
+        animation:3s fadeIn;
         animation-timing-function: linear;
         animation-iteration-count: 1;
     }
@@ -88,21 +87,17 @@
         line-height:normal;
         margin-bottom:50px;
         color:var(--frostwhite,white);
-        animation:700ms slide-in;
+        animation:4s fadeIn;
         animation-timing-function: linear;
         animation-iteration-count: 1;
     }
 
-    @keyframes slide-in{
-        from{
-            transform:translateX(-100%);
-            opacity: 0;
+    @keyframes fadeIn{
+        0%{
+            opacity:0;
         }
-        
-        to{
-            transform:translateX(0%);
-            opacity: 1;
-
+        100%{
+            opacity:1;
         }
     }
   
@@ -182,6 +177,10 @@
         font-size:18px;
         font-family:"Figtree",serif;
         font-weight:700;
+    }
+
+    .navigation ul li::marker{
+        color:var(--frostwhite,white);
     }
 
     .navigation ul li a{
@@ -310,6 +309,7 @@
             font-weight:700;
             font-size:3.25rem;
             color:var(--redpink,red);
+            letter-spacing:.25rem;
         }
     }
 

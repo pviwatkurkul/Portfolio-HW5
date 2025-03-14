@@ -77,7 +77,7 @@
         display:block;
         box-sizing:content-box;
         padding:8px;
-        color:#e94560;
+        color:var(--redpink,red);
         font-family:"Figtree", serif;
         font-size:0.75rem;
         border:1px solid var(--redpink,red);
@@ -161,10 +161,10 @@
         display:block;
         box-sizing:content-box;
         padding:8px;
-        color:#e94560;
+        color:var(--redpink,red);
         font-family:"Figtree", serif;
         font-size:14px;
-        border:1px solid var(--redpink,red);
+        border:2px solid var(--redpink,red);
         border-radius:8px;
     }
 }
@@ -245,10 +245,10 @@
         display:block;
         box-sizing:content-box;
         padding:10px;
-        color:#e94560;
+        color:var(--redpink,red);
         font-family:"Figtree", serif;
         font-size:1rem;
-        border:1px solid var(--redpink,red);
+        border:2px solid var(--redpink,red);
         border-radius:8px;
     }
 }

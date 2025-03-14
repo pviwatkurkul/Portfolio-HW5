@@ -171,9 +171,12 @@
         align-self:flex-end;
         flex-basis:auto;
         border-radius:8px;
+        transition: all .2s ease-in-out;
+
     }
 
     #form-submit:hover{
+        transform: scale(1.2);
         cursor:pointer;
     }
 

@@ -4,19 +4,26 @@
             "name":"TripSmart",
             "imgPath":"./assets/tripsmart.png",
             "imgAlt":"TripSmart Web Application Screenshot",
-            "content":"Tripsmart is a social web app designed for planning and budgeting group travel. It features an intuitive spending dashboard that tracks expenses both before and during your trip, ensuring seamless budget management among friends. Create and save detailed itineraries that include flights, hotels, and planned activities, and work together in real time to create unforgettable travel experiences."
+            "content":"Tripsmart is a social web app designed for planning and budgeting group travel. It features an intuitive spending dashboard that tracks expenses both before and during your trip, ensuring seamless budget management among friends. Create and save detailed itineraries that include flights, hotels, and planned activities, and work together in real time to create unforgettable travel experiences.",
+            "tags": ["React.js","CSS","HTML","Node.js","MongoDB"],
+            "link":"https://github.com/pviwatkurkul/tripsmart"
         },
         {
             "name":"Data Science Alliance",
             "imgPath":"./assets/dsa.png",
             "imgAlt":"DSA Web Application Screenshot",
-            "content":"I had the pleasure of working for Data Science Alliance a non-profit organization aimed at making Data Science ethical. The project required building the website and consisting of multiple pages. I lead a team of other web developer interns and ensured work that was accessible, responsive, and intuitive."
+            "content":"I had the pleasure of working for Data Science Alliance a non-profit organization aimed at making Data Science ethical. The project required building the website and consisting of multiple pages. I lead a team of other web developer interns and ensured work that was accessible, responsive, and intuitive.",
+            "tags": ["JavaScript","CSS","HTML","Node.js"],
+            "link":"https://github.com/pviwatkurkul/DSA-Alliance-Page-Rebuild"
+
         },
         {
             "name":"One and Done",
             "imgPath":"./assets/onedone.png",
             "imgAlt":"One and Done Web Application Screenshot",
-            "content":"One and Done is a CRUD web app designed for developers and task managers. It enables users to efficiently create, update, and manage tasks, compose notes using Markdown, and organize files with a custom-built folder system."
+            "content":"One and Done is a CRUD web app designed for developers and task managers. It enables users to efficiently create, update, and manage tasks, compose notes using Markdown, and organize files with a custom-built folder system.",
+            "tags": ["JavaScript","HTML","CSS","Node.js","Puppeteer","Jest"],
+            "link":"https://github.com/pviwatkurkul/One-and-Done"
         }
     ]
 }

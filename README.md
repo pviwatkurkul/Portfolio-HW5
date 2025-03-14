@@ -10,3 +10,5 @@
   * Because the previous homeworks required different color representations, I default the colors back to hex to make theme switching and variables easier to utilize.
 * Adjusted responsiveness of cards to reflect screen changes better
   * Made cards bigger to look less skinny and made responsiveness transition better to make scaling less erratic.
+* Changed animation of introduction from slide-in to fade in.
+  * To make the introduction more interesting on page load, changed the animation to make the movements less chaotic on frequent page loads.
